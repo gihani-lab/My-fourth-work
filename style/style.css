@@ -69,16 +69,16 @@
   height: auto;
 }
 .block__square--five {
-  justify-content: space-evenly;
-  gap: 20px;
   align-self: stretch;
 }
-.one {
+
+.block__square--text-center {
+  display: flex;
+}
+.block__square--text-center span {
   color: #e5e5e5;
   font-size: small;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  margin: 20px 0;
 }
 
 .block--six {
@@ -94,7 +94,7 @@
 }
 
 .block--six .block__square--six {
-  width: 200px;
+  flex-grow: 1;
 }
 
 .container-circle {
