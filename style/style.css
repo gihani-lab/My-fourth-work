@@ -1,4 +1,5 @@
 .container-square {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -7,9 +8,12 @@
   background: #370617;
   align-content: space-around;
   margin: auto;
+  padding: 103px;
+  gap: 10px;
 }
 
 .block {
+  box-sizing: border-box;
   width: 468px;
   height: 160px;
   background-color: #f48c06;
@@ -25,104 +29,74 @@
   border-radius: 4px;
 }
 
-.block--left {
+.block--one {
   justify-content: start;
   align-items: flex-end;
   gap: 20px;
 }
 
-.block--middle {
+.block--two {
   justify-content: center;
   gap: 20px;
   align-items: stretch;
 }
 
-.block--middle .block__square {
+.block--two .block__square {
   height: auto;
 }
 
-.block--right {
+.block--three {
   gap: 20px;
   justify-content: end;
   align-items: center;
 }
 
-.block--one {
+.block--four {
   justify-content: space-around;
 
   align-items: center;
 }
 
-.block__square--one {
+.block__square--four {
   align-self: end;
 }
 
-.block--two .block__square--two {
+.block--five {
+  align-items: center;
+  justify-content: space-evenly;
+}
+.block--five .block__square--five {
   height: auto;
 }
-
-.block__square--two {
+.block__square--five {
   justify-content: space-evenly;
   gap: 20px;
   align-self: stretch;
 }
-
-.block--two {
-  align-items: center;
-  justify-content: space-evenly;
+.one {
+  color: #e5e5e5;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
-.block--three {
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.block--three {
+.block--six {
   align-items: center;
   justify-content: space-around;
   gap: 20px;
 }
 
-.block--three .block__square--three {
+.block--six {
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.block--six .block__square--six {
   width: 200px;
 }
 
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 1152px;
-  height: 700px;
-  background: #370617;
-  align-content: space-around;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-.card {
-  width: 273px;
-  height: 220px;
-  background-color: #f48c06;
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.card__circle {
-  height: 50px;
-  width: 50px;
-  background-color: #bbb;
-  border-radius: 50%;
-}
-.card--one {
-  justify-content: space-evenly;
-}
-.card__circle--one {
-  justify-content: left;
-}
-
-.container2 {
+.container-circle {
   box-sizing: border-box;
   display: flex;
   justify-content: start;
@@ -134,13 +108,14 @@
   background: #e5e5e5;
   padding: 147px;
   margin: auto;
+  background-color: #f48c06;
 }
 
 .card {
   box-sizing: border-box;
   width: 273px;
   height: 220px;
-  background-color: #f48c06;
+  background-color: #03071e;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +140,7 @@
   align-content: end;
   gap: 20px;
   flex-wrap: wrap-reverse;
+  background-color: #6a040f;
 }
 
 .card--three {
@@ -176,9 +152,9 @@
 
 .card--four {
   justify-content: space-around;
-
   align-content: space-around;
   gap: 20px;
+  background-color: #6a040f;
 }
 
 .card--five {
