@@ -1,4 +1,4 @@
-.container {
+.container-square {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -86,4 +86,104 @@
 
 .block--three .block__square--three {
   width: 200px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1152px;
+  height: 700px;
+  background: #370617;
+  align-content: space-around;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.card {
+  width: 273px;
+  height: 220px;
+  background-color: #f48c06;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card__circle {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+.card--one {
+  justify-content: space-evenly;
+}
+.card__circle--one {
+  justify-content: left;
+}
+
+.container2 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 1152px;
+  height: 700px;
+  background: #e5e5e5;
+  padding: 147px;
+  margin: auto;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 273px;
+  height: 220px;
+  background-color: #f48c06;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card__circle {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.card--one {
+  justify-content: start;
+  align-content: start;
+  gap: 20px;
+}
+
+.card--two {
+  justify-content: end;
+  align-content: end;
+  gap: 20px;
+  flex-wrap: wrap-reverse;
+}
+
+.card--three {
+  justify-content: space-between;
+
+  align-content: space-between;
+  gap: 20px;
+}
+
+.card--four {
+  justify-content: space-around;
+
+  align-content: space-around;
+  gap: 20px;
+}
+
+.card--five {
+  justify-content: center;
+
+  align-content: center;
+  gap: 20px;
 }
